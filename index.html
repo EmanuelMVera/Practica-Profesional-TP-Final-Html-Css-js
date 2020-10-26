@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOW Classic</title>
+    <style>
+
+        body
+        {
+            background="imagenes/index/FondoUniverso.webp";
+            width: 100%;
+            height: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contorno{
+            width: 350px;
+            height: 350px;
+            background-color: rgba(64, 2, 122, 0.479);
+            border-radius: 10%;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;}
+
+        input{
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 5px 5px 0px #424242;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: "Homer Simpson UI";}
+
+        .boton1{
+            background-color: rgb(37, 0, 78);
+            color: #fff;
+            width: 200px;
+            font-family: cursive;
+            font-size:x-large;}
+        .boton2{
+            width: 250px;
+            background-color: rgb(37, 0, 78);
+            color: #fff;
+            font-family: cursive;
+            font-size:x-large;}
+        div a:link{
+            width: 100%;
+            text-decoration: none;
+            font-family: Zapf-Chancery;
+            color: rgb(0, 175, 206);}
+        div a:visited{
+            width: 100%;
+            text-decoration: none;
+            font-family: Zapf-Chancery;
+            color: rgb(0, 175, 206);}
+        
+        .contorno div .mailYPass{
+            width: 300px;
+            height: 30px;}
+
+        hr{
+            height: 1px;
+            background-color: rgb(102, 0, 185);}
+
+        div .line
+        {
+            width: 100%;
+        }
+        .cajas{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cajas input{
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body background="images\index\FondoUniverso.webp">
+
+    <form>
+    <div class="contorno">
+        
+        <div class="line"><hr></div>
+        <div class="cajas"><input class="mailYPass" type="email" name="mail" id="" placeholder="Correo electrónico">   
+        <input class="mailYPass" type="password" name="" id="" placeholder="Contraseña"></div>
+        <div><a href="home.html"><input class="boton1" type="submit" value="Entrar"></a></div>
+        <div><a href="#">¿Olvidaste tu contraseña?</a></div>
+        <div class="line"><hr></div>
+        <div><input class="boton2" type="submit" value="Crear cuenta nueva"></div>
+    </div>
+    </form>
+
+</body>
+</html>
