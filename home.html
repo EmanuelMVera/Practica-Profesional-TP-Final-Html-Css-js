@@ -2,50 +2,33 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World of Warcraft Classic</title>
-    <style>
-        .contenedor{
-            width: 80%;
-            max-width: 1000px;
-            color: #ffff;
-            margin: 0 auto;
-            overflow: hidden;
-            background-color: rgba(58, 0, 87, 0.918);}
-        header div img{
-            width: 100%;}
-        nav{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;}
-    </style>
+    <link rel="stylesheet" href="style/general.css">
 </head>
-<body background="images\index\FondoUniverso.webp">
-
+<body>
     <div class="contenedor">
+    <header>
+        <img src="images/General/banner1.jpg" alt="" class="banner">
+        <nav><ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="home.html">Alquimia</a></li>
+            <li><a href="home.html">Herbolisteria</a></li>
+            <li><a href="home.html">Herreria</a></li>
+            <li><a href="home.html">Ingenieria</a></li>
+            <li><a href="home.html">Mineria</a></li>
+            <li><a href="home.html">Sastreria</a></li>
+            <li><a href="home.html">Encantamiento</a></li>
+            <li><a href="home.html">Pelateria</a></li>
+            <li><a href="home.html">Desollar</a></li>  
+        </ul></nav>
+    </header>
 
-        <header>
-            <div><img src="images/home/banner.jpg" alt=""></div>
-            <nav>
-                <div class="boton"><a href="home.html"><input type="submit" value="Home"></a></div>
-                <div class="boton"><a href="home.html"><input type="submit" value="Alquimia"></a></div>
-                <div class="boton"><a href="home.html"><input type="submit" value="Herbolisteria"></a></div>
-                <div class="boton"><a href="home.html"><input type="submit" value="Herreria"></a></div>
-                <div class="boton"><a href="home.html"><input type="submit" value="Ingenieria"></a></div>
-                <div class="boton"><a href="home.html"><input type="submit" value="Mineria"></a></div>
-                <div class="boton"><a href="home.html"><input type="submit" value="Sastreria"></a></div>
-                <div class="boton"><a href="home.html"><input type="submit" value="Encantamiento"></a></div>
-                <div class="boton"><a href="home.html"><input type="submit" value="Pelateria"></a></div>
-                <div class="boton"><a href="home.html"><input type="submit" value="Desollar"></a></div>  
-            </nav>
-        </header>
-        <div>
-            <h1>Profesiones</h1>
-            <p>En esta seccion Home veremos una vista previa de las profesiones que veremos en World of Warcraft: Classic. <br>Esta guía esta pensada para aquellos jugadores que no estén familiarizados con el sistema de profesiones durante WoW Classic para que tengan un mejor entendimiento. <br>Más adelante, también podrás ver guás de profesiones específicas.</p>
+    <section>
+        <article>
+            <h1>Guia de Profesiones</h1>
+            <p>En esta seccion Home veremos una vista previa de las profesiones que veremos en World of Warcraft: Classic. <br>Esta guía esta pensada para aquellos jugadores que no estén familiarizados con el sistema de profesiones durante WoW Classic para que tengan un mejor entendimiento. <br>En el menu de navegación, también podrás ver guás de profesiones más específicas.</p>
 
-            <div>
+            <table><tr>
                 <h2>Contenido</h2>
                 <ul>
                     <ol><a href="#">1 Sistema de profesiones en WoW Classic</a></ol>
@@ -70,8 +53,10 @@
                         <ol><a href="#">7.3 Primeros Auxilios</a></ol>
                     </ol>
                 </ul>
-            </div>
+            </tr></table>
+        </article>
 
+        <article>
             <h3>Sistemas de Profesiones en WoW Classic</h3>
             <p>Los jugadores podemos elegir entre dos Profesiones Primarias. Estas profesiones serían:</p>
             <ul>
@@ -96,10 +81,14 @@
                 <li>Ingeniería - Goblin y Gnomica</li>
                 <li>Pelatería - Elemental, Dragontina y Tribal</li>
             </ul>
+        </article>
 
+        <article>
             <h3>Niveles de profesión</h3>
             <p>Para subir el nivel de profesión solamente tenemos que ir haciendo o recolectando objetos hasta que el juego determine que es demasiado fácil hacerlo. Para saber este punto, se diferencia en colores: si a la hora de hacerlo/recolectarlo nos aparece en <span>naranja</span>, tiene una probabilidad del 100% de darnos un punto de nivel. Si aparece en <span>amarillo</span>, la probabilidad de conseguir el punto de habilidad es frecuente. Si aparece en <span>verde</span>, la probabilidad es poco frecuente. Y si aparece en <span>gris</span>, no nos va a dar ningún punto de nivel de habilidad.</p>
+        </article>
 
+        <article>
             <h3>Rangos de Profesión</h3>
             <p>Según vamos subiendo de nivel de profesión, también tenemos que aprender los rangos que nos enseña el instructor.</p>
             <ul>
@@ -116,14 +105,18 @@
                 <li>Artesano - Nivel 35 para Producción, Nivel 25 para Recolección y Nivel 10 para Pesca.</li>
             </ul>
             <p>Las profesiones de producción son aquellas en las que recolectamos recetas que nos enseñan a hacer equipo que podemos equipar o comerciar: Alquimia, Herrería, Cocina, Ingeniería, Pelatería y Sastreria. <br>Las profesiones de recolección son las que ayudan a las profesiones de producción adquiriendo materiales requeridos para crear objetos: Botánica, Minería, Desuello y Pesca. <br>Además, las profesiones consideradas de servicio son las que generan objetos que benefician a los jugadores: Encantamiento y Primeros Auxilios.</p>
+        </article>
 
+        <article>
             <h3>Raciales de profesiones</h3>
             <p>Tenemos dos razas que ofrecen bonificación para las profesiones:</p>
             <ul>
                 <li>Los Tauren tiene la racial de Cultivo, que aumenta la habilidad de Botánica en 15p</li>
                 <li>Los Gnomos tienen la racial de <span>Especialización de Ingeniería</span> que aumenta la habilidad de Ingeniería en 15p.</li>
             </ul>
+        </article>
 
+        <article>
             <h3>Objetos necesarios para profesiones</h3>
             <p>Necesitaremos llevar encima ciertos objetos dependiendo de la profesión. Estos objetos no podemos dejarlos en el banco, siempre tienen que estar en nuestra mochila a la hora de crear o fabricar.</p>
             <ul>
@@ -132,7 +125,9 @@
                 <li>Con <b>Encantamiento</b> tendremos que llevar una <b>Vara de Encantamiento</b>.</li>
                 <li>Con <b>Minería</b> tendremos que llevar encima un <b>Pico de minero</b>.</li>
             </ul>
+        </article>
 
+        <article>
             <h3>Profesiones Primarias</h3>
             <h4>Alquimia</h4>
             <p>Con la profesión de Alquimia podremos crear frascos, pociones, elixires y otros objetos que podemos usar para obtener un beneficio. Es muy útil para mazmorras y bandas y lo habitual es compaginarlo con Botánica para poder obtener los materiales(hierbas) para hacer los objetos. <br>También podemos complementarlo con Pesca como profesión secundaria y obtener el Aceite de Pescado, entre otros, que necesitaremos en algunos casos.</p>
@@ -152,7 +147,9 @@
             <p>Actualmente lo conocemos como Herbolistería. Se suele compaginar con Alquimia para poder usar las plantas como componentes de recetas.</p>
             <h4>Minería</h4>
             <p>Minería es la profesión óptima para Herrería e Ingeniería, para obtener materiales para las recetas de dichas profesiones. Podremos recolectar menas por el mundo, pero debemos llevar encima siempre un <b>Pico de minero</b> y no olvidarlo en el banco. <br>Además, cuando hayamos recolectado las menas, debemos fundirlas cerca de un horno para convertirlo en barras, que es el material que nos pedirán para hacer recetas.</b></p>
+        </article>
 
+        <article>
             <h3>Profesiones Secundarias</h3>
             <h4>Cocina</h4>
             <p>Con Cocina podemos hacer comidas que al consumirlas nos darán salud y maná. Tambien se pueden obtener beneficios como estar *Bien Alimentado* que aumenta estadísticas, algo muy útil para hacer mazmorras y bandas. <br>Para cocinar necesitaremos Fuego de Cocina, bien en una cocina específica, bien podemos hacerla nosotros. Para hacerla, necesitaremos Madera simple, Sílex y Yesca.</p>
@@ -160,8 +157,7 @@
             <p>Pesca es una profesión que nos llevará mucho tiempo subir. Pero con ello, podremos obtener ciertas recetas o ingredientes específicos para otras profesiones. <br>Para poder pescar nos tenemos que hacer con una Caña de pescar que debemos tener en la mochila para poder sustituir nuestra arma, es decir, tendremos que equipárnosla. <br>Según tengamos el nivel de habilidad de Pesca, tendremos más o menos suerte de pescar un pez. En zonas de mayor nivel tendremos mayor probabilidad de subir de nivel. <br>Al pescar en un círculo marcado con un pez especifico nos dará mayor probabilidad de obtenerlo que si lo hacemos en cualquier otra zona del agua. <br>Algunos peces solamente aparecerán durante el día o durante la noche.</p>
             <h4>Primeros Auxilios</h4>
             <p>Primeros Auxilios tiene una gran ventaja, que es poder vendar a caulquiera, no solamente a nosotros mismos. Al vendar, lo que hacemos es curar. Y esta sanación se hace siempre y cuando estemos fuera de combate. <br>Además podemos hacer anti-venenos aunque éstps son más potentes con las recestas de Alquimia.</p>
-        </div>
+        </article>
     </div>
-    
 </body>
 </html>
