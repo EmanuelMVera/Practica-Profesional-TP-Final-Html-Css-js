@@ -30,22 +30,23 @@ section article{
     padding: 20px;
     background: lightcoral;
 }
-section article table{
+section article .indice{
     border: 2px solid black;
     box-shadow: 10px 5px 5px black;
     padding: 15px;
 }
 
 h1, h2, h3, h4{color: rgb(141, 0, 0);}
-h1{font-size: xx-large;}
+h1{
+    font-size: 450%;
+    font-family: serif;
+    text-align: center;
+}
 h2{font-size: xx-large;}
 h3{font-size: x-large;}
 
 img{width: 70%;}
-.logoGuia
-{
-    width: 80%;
-}
+
 .logoProfesion
 {
     width: 20%;
