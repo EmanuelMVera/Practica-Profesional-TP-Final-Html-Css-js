@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOW Classic</title>
+    <link rel="stylesheet" href="style/index.css">
+    <script>
+        function recuperar()
+        {
+            var user = document.getElementById("mail").value;
+
+            if(user.length>0)
+            {alert("Revise bandeja de entrada del correo");
+            window.open("indexLogin.html"); }
+        }
+    </script>
+</head>
+<body background="images/General/fondoRojo.jpg">
+
+    <form method="GET">
+    <div class="contorno">
+        <div class="line"><hr></div>
+        <input class="mailYPass" type="email" name="mail" id="mail" placeholder="Correo electrónico" required>
+        <input class="boton2" type="submit" value="Recuperar contraseña" onclick="recuperar()">
+        <div class="line"><hr></div>
+    </div>
+    </form>
+
+</body>
+</html>

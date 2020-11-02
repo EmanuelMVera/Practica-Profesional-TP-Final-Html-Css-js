@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOW Classic</title>
+    <link rel="stylesheet" href="style/index.css">
+    <script>
+        function login()
+        {
+            var user = document.getElementById("mail").value;
+            var pass = document.getElementById("password").value;
+
+            if(user.length==0 || pass.length==0){
+                alert("Error user o pass incorrecto");
+                window.open("indexLogin.html");}
+            else{
+                alert("Bienvenido");
+                window.open("home.html");}
+        }
+
+        function register()
+        {
+            window.open("indexRegistrar.html");
+        }
+    </script>
+</head>
+<body background="images/General/fondoRojo.jpg">
+
+    <form method="GET">
+    <div class="contorno">
+        
+        <div class="line"><hr></div>
+        <div class="cajas"><input class="mailYPass" type="email" name="mail" id="mail" placeholder="Correo electrónico" required>   
+        <input class="mailYPass" type="password" name="password" id="password" placeholder="Contraseña" required></div>
+        <div><input class="boton1" type="submit" value="Entrar" onclick="login()"></div>
+        <div><a href="indexRecuperar.html">¿Olvidaste tu contraseña?</a></div>
+        <div class="line"><hr></div>
+        <div><input class="boton2" type="submit" value="Crear cuenta nueva" onclick="register()"></div>
+    </div>
+    </form>
+
+</body>
+</html>

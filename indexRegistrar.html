@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOW Classic</title>
+    <link rel="stylesheet" href="style/index.css">
+    <script>
+        function registrar()
+        {
+            var user = document.getElementById("mail").value;
+            var pass1 = document.getElementById("password1").value;
+            var pass2 = document.getElementById("password2").value;
+
+            if(user.length>0&&pass1.length>0&&pass2.length>0){
+                if(pass1 == pass2){
+                    alert("Cuenta Creada Exitosamente");
+                    window.open("indexLogin.html");}
+                else
+                    alert("Error! las contraseñas no coinciden");}
+            else{
+                alert("Error! Campos invalidos");}
+        }
+    </script>
+</head>
+<body background="images/General/fondoRojo.jpg">
+
+    <form method="GET">
+    <div class="contorno">
+        
+        <div class="line"><hr></div>
+        <div class="cajas">
+            <input class="mailYPass" type="email" name="mail" id="mail" placeholder="Correo electrónico" required>   
+            <input class="mailYPass" type="password" name="password1" id="password1" placeholder="Contraseña" required>
+            <input class="mailYPass" type="password" name="password2" id="password2" placeholder="Repita Contraseña" required>
+        </div>
+        <input class="boton2" type="submit" value="Crear cuenta nueva" onclick="registrar()">
+        <div class="line"><hr></div>
+        
+    </div>
+    </form>
+
+</body>
+</html>
